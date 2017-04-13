@@ -1,0 +1,33 @@
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Tic Tac Toe in Javascript</title>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.2.0/normalize.min.css">
+    <link type="text/css" rel="stylesheet" href="styles.css"/>
+</head>
+<body>
+<div class='display'>
+    <h1> Tic Tac Toe </h1>
+    <div id="questions">
+        <h2> How big would you like your board? </h2>
+        <input type='text' name='size' id='size-input'>
+        <label for="size-input">cells by <span id="size-display">_</span> cells</label>
+        <input type="submit" value="Start Game!">
+    </div>
+
+    <div class="board hide">
+    </div>
+
+    <div id="outcome" class="hide">
+        <h2></h2>
+    </div>
+</div>
+<!-- link to jquery -->
+
+<script src='https://code.jquery.com/jquery-3.1.0.min.js'> </script>
+
+<!-- link to your app.js -->
+
+<script type="text/javascript" src="tic_tac_toe.js"> </script>
+</body>
+</html>

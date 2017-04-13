@@ -1,0 +1,73 @@
+body {
+}
+
+.display {
+    font-family: 'Montserrat', sans-serif;
+    width: 550px;
+    text-align: center;
+    margin: 20px auto;
+    padding: 40px 20px;
+    background-color: #FFF;
+    border: 1px solid black;
+    border-radius: 20px
+}
+
+h1 {
+     font-family: 'Iceland';
+    margin: 0px auto 20px;
+    display: block;
+    font-size: 4em;
+    color: #0c0c0c;
+}
+
+.board {
+    margin: 0 auto;
+    border: 1px solid #0B1C66;
+    display: table;
+    font-size: 5em
+}
+
+.board .X {
+    color: #FF1E0F
+}
+
+.board .O {
+    color: #1463B2
+}
+
+.row {
+    display: table-row
+}
+
+.cell {
+    display: table-cell;
+    border: 1px solid #000;
+    width: 100px;
+    height: 100px;
+    line-height: 100px;
+    text-align: center
+}
+
+.hide {
+    display: none
+}
+
+#questions {
+    margin-top: 20px
+}
+
+input[type=text] {
+    font-size: 2em;
+    width: 50px
+}
+
+input[type=submit] {
+    font-size: 20px;
+    margin: 20px auto;
+    display: block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 10px
+}
