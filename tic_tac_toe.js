@@ -87,16 +87,22 @@ Game = {
         a) : !1
     }
 },
+
+
+
 $(function() {
+
     $("input").keyup(function(e) {
         $("#size-display").text($(e.target).val())
     }),
+
     $("input[type=submit]").click(function(e) {
         var a = parseInt($("#size-input").val());
         a && (Game.init(a),
         $("#questions").addClass("hide"),
         $(".board").removeClass("hide"))
     }),
+
     $(".board").on("click", function(e) {
         if ($(e.target).hasClass("cell")) {
             if ($(e.target).text())
