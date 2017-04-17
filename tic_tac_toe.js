@@ -6,6 +6,7 @@ Game = {
     size: null,
 
     $board: $(".board"),
+
     init: function(e) {
         Game.size = e,
         Game.cells = [];
@@ -129,7 +130,7 @@ $(function() {
     })
 
     $('#restart').on("click",function(){
-         location.reload(true);
+         location.reload();
     })
 
 });
