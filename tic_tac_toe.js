@@ -10,8 +10,15 @@ Game = {
     init: function(e) {
         Game.size = e,
         Game.cells = [];
-        for (var a = 0; a < Game.size; a++)
+        for (var a = 0; a < Game.size; a++){
             Game.cells[a] = new Array(Game.size);
+            if (Game.size >9 || Game.size <3 ){
+                $("#outcome h2").text("Please select a number between 3-9 to make it a fair game.");
+                $("#outcome").removeClass("hide");
+                return false;
+            };
+        }
+
         Game.generateBoard()
     },
 
